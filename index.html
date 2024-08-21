@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- font awesom cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- tailwind and daisyui playcdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -13,7 +15,46 @@
     <!-- bg-gray-100 section -->
     <div class="bg-gray-100 h-[100rem] w-[100vw]">
         <!-- container mx-auto -->
-        <div class="mx-5 md:mx-0 pt-[1rem] md:pt-[2rem] md:container md:mx-auto  xl:max-w-[120rem] 2xl:max-w-[150rem] h-[100vh] bg-gray-400"></div>
+        <div class="mx-5 md:mx-0 pt-[1rem] md:pt-[2rem] md:container md:mx-auto  xl:max-w-[120rem] 2xl:max-w-[150rem] h-[100vh]">
+            <!-- navbar section -->
+             <nav class="flex items-center justify-between pt-[2rem]">
+                <!-- logo -->
+                <div class="flex items-center gap-x-5">
+                    <img class="w-[3.5rem]" src="./assets/arrow-up-green.png" alt="">
+                    <h1 class="text-[3rem] font-bold text-gray-800">Rinterio</h1>
+                </div>
+                <!-- nav links -->
+                <div class="hidden lg:block xl:ml-[5rem]">
+                    <ul class="flex items
+                    -center space-x-8 xl:space-x-16 text-[2rem]">
+                        <li><a href="#" class="text-gray-800 font-semibold">Home</a></li>
+                        <li><a href="#" class="text-gray-500">Services</a></li>
+                        <li><a href="#" class="text-gray-500">Portfolio</a></li>
+                        <li><a href="#" class="text-gray-500">Blogs</a></li>
+                        <li><a href="#" class="text-gray-500">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- right side icons -->
+                <div class="flex items-center gap-x-7">
+                    <button class="hidden sm:flex items-center justify-center bg-white w-[5.5rem] h-[5.5rem] rounded-[50%]">
+                        <img class="w-[3rem]" src="./assets/search-01.png" alt="">
+                    </button>
+                    <button class="hidden sm:flex items-center justify-center bg-white w-[5.5rem] h-[5.5rem] rounded-[50%]">
+                        <img class="w-[3rem]" src="./assets/shopping-cart-01.png" alt="">
+                    </button>
+                    <button class="hidden sm:flex justify-center items-center gap-x-5 w-[20rem] h-[5.5rem] rounded-[3rem] bg-lime-400">
+                        <p class="text-[1.8rem] text-gray-800 font-semibold">Book Consultant</p>
+                        <img class="w-[2.8rem]" src="./assets/arrow-up-black.png" alt="">
+                    </button>
+
+                    <button class="lg:hidden flex items-center justify-center bg-white w-[5.5rem] h-[5.5rem] rounded-[50%]">
+                        <img class="w-[3rem]" src="./assets/hamburger.png" alt="">
+                    </button>
+
+                </div>
+             </nav>
+        </div>
     </div>
 </body>
 </html>
