@@ -48,9 +48,21 @@
                         <img class="w-[2.8rem]" src="./assets/arrow-up-black.png" alt="">
                     </button>
 
-                    <button class="lg:hidden flex items-center justify-center bg-white w-[5.5rem] h-[5.5rem] rounded-[50%]">
+                    <!-- <button class="lg:hidden flex items-center justify-center bg-white w-[5.5rem] h-[5.5rem] rounded-[50%]">
                         <img class="w-[3rem]" src="./assets/hamburger.png" alt="">
-                    </button>
+                    </button> -->
+
+                    <details class="dropdown ">
+                        <summary class="lg:hidden flex items-center justify-center bg-white w-[5.5rem] h-[5.5rem] rounded-[50%] cursor-pointer"><img class="w-[3rem]" src="./assets/hamburger.png" alt=""></summary>
+                          
+                        <ul class="menu dropdown-content bg-gray-100 rounded-box z-[1] w-52 p-2 ml-[-7rem] shadow text-[1.6rem]">
+                            <li><a href="#" class="text-gray-800 font-semibold">Home</a></li>
+                        <li><a href="#" class="text-gray-500">Services</a></li>
+                        <li><a href="#" class="text-gray-500">Portfolio</a></li>
+                        <li><a href="#" class="text-gray-500">Blogs</a></li>
+                        <li><a href="#" class="text-gray-500">Contact Us</a></li>
+                        </ul>
+                    </details>
 
                 </div>
              </nav>
@@ -73,9 +85,9 @@
     </div>
 
     <!-- bg-zinc-200 section -->
-    <div class="bg-zinc-200 h-[200rem] sm:h-[130rem] w-[100vw]">
+    <div class="bg-zinc-200 h-[600rem] sm:h-[500rem] lg:h-[172rem] w-[100vw]">
         <!-- container mx-auto -->
-        <div class="mx-5 md:mx-0 pt-[1rem] md:pt-[2rem] md:container md:mx-auto  xl:max-w-[120rem] 2xl:max-w-[150rem] h-[200rem] sm:h-[130rem]">
+        <div class="mx-5 md:mx-0 pt-[1rem] md:pt-[2rem] md:container md:mx-auto  xl:max-w-[120rem] 2xl:max-w-[150rem] h-[600rem] sm:h-[500rem] lg:h-[172rem]">
             <!-- about us section -->
              <div class="flex flex-col lg:flex-row items-start">
                 <div class="mt-[3rem] flex flex-col items-start">
@@ -103,7 +115,7 @@
 
                         </div>
                     </div>
-                    <div class="my-[2rem] sm:my-0 xl:my-[2rem] flex items-center gap-x-8 bg-gray-50 px-[2rem] py-[1.5rem] rounded-[2rem] w-[100%] sm:w-[90%]">
+                    <div class="my-[2rem] sm:my-0 xl:mt-[2rem] flex items-center gap-x-8 bg-gray-50 px-[2rem] py-[1.5rem] rounded-[2rem] w-[100%] sm:w-[90%]">
                         <div>
                             <img class="w-[7rem]" src="./assets/residential.png" alt="">
                         </div>
@@ -116,10 +128,11 @@
                      </div>
                 </div>
                 <!-- image -->
-                <div class="flex flex-col items-center sm:mt-[2rem] lg:mt-[20.5rem] xl:mt-[19.5rem] 2xl:mt-[2.5rem] lg:ml-[-2rem] xl:ml-[2rem] 2xl:ml-0 w-full">
+                <div class="self-end flex flex-col items-center sm:mt-[2rem] l lg:ml-[-2rem] xl:ml-[2rem] 2xl:ml-0 w-full">
                     <img class="w-[100%] h-[28rem] sm:h-[40rem] lg:h-full lg:w-[75rem]" src="./assets/Rectangle.png" alt="">
                 </div>
              </div>
+             <!-- g:mt-[20.5rem] xl:mt-[19.5rem] 2xl:mt-[2.5rem] -->
 
              <!-- count section -->
               <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-[5rem] w-[100%] bg-gray-50 rounded-[2rem] p-4">
@@ -144,32 +157,79 @@
                     <p class="text-[1.4rem]">Staff Members</p>
                 </div> 
             </div>
-                <!-- <div class="grid cols-4 mt-[5rem] w-[100%] h-[25rem] bg-gray-50 rounded-[2rem]">
-                    <div class="col-span-1 flex flex-col 
-                    items-center text-[2rem]">
-                        <img class="w-[4.5rem]" src="./assets/count-01.png" alt="">
-                        <p class="text-gray-800 font-bold text-[3.5rem]">235+</p>
-                        <p class="text-[1.4rem] ">Happy Client Review</p>
-                    </div> 
-                    <div class="flex flex-col 
-                    items-center text-[2rem]">
-                        <img class="w-[4.5rem]" src="./assets/count-02png" alt="">
-                        <p class="text-gray-800 font-bold text-[3.5rem]">50+</p>
-                        <p class="text-[1.4rem] ">Work Departments</p>
-                    </div> 
-                    <div class="flex flex-col 
-                    items-center text-[2rem]">
-                        <img class="w-[4.5rem]" src="./assets/count-03.png" alt="">
-                        <p class="text-gray-800 font-bold text-[3.5rem]">30k+</p>
-                        <p class="text-[1.4rem] ">Our Happy Client</p>
-                    </div> 
-                    <div class="flex flex-col 
-                    items-center text-[2rem]">
-                        <img class="w-[4.5rem]" src="./assets/count-04.png" alt="">
-                        <p class="text-gray-800 font-bold text-[3.5rem]">307+</p>
-                        <p class="text-[1.4rem] ">Staff Members</p>
-                    </div> 
-                </div> -->
+
+            <!-- our work process section -->
+            <div class="flex flex-col lg:flex-row items-start mt-[1rem] lg:mt-[4rem]">
+                <div class="mt-[3rem] flex flex-col items-start">
+                    <div class="lg:relative  mx-auto">
+                        <button class="mt-[2rem] flex justify-center items-center gap-x-3 w-[18rem] h-[4.5rem] bg-gray-50 rounded-[2.5rem] ">
+                            <img src="./assets/arrow.png" alt="">
+                            <p class="text-gray-800 text-[2rem] font-medium">How we works</p>
+                        </button>
+                    </div>
+                    <div class="mx-auto flex flex-col items-center">
+                        <h1 class="mt-[2rem] text-gray-800 text-[4rem] sm:text-[5rem] lg:text-[5rem] xl:text-[6rem] max-w-[90rem]   tracking-tight lg:tracking-wide font-bold leading-tight  lg:text-left">Our Works Process</h1>
+                        <p class="my-[2rem] lg:my-0 xl:my-[2rem] text-gray-600 text-[1.8rem] sm:text-[2rem] lg:max-w-[50rem] xl:max-w-[77rem] text-center">
+                        We work closely with our clients to create spaces that are tailored to their needs and lifestyle. Our process is collaborative and transparent.
+                        </p>
+                    </div>
+                   
+
+                    <!-- card section -->
+                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-6 align-items-center justify-items-center mt-[5rem] w-[100%]">
+
+                        <div class="flex flex-col items-start bg-pink-300 px-[2rem] py-[1.5rem] rounded-[2rem] sm:w-[90%]">
+                            <div>
+                                <img class="w-[7rem] mx-auto" src="./assets/concept.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="text-[2.5rem] sm:text-[3rem] text-gray-800 font-semibold my-[.5rem]">Concept</h1>
+                                <p class="text-[1.6rem] text-gray-700">
+                                    We start by understanding our client's needs and vision for the space, and then develop a concept that captures their unique style and personality.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col items-start bg-amber-300 px-[2rem] py-[1.5rem] rounded-[2rem] sm:w-[90%]">
+                            <div>
+                                <img class="w-[7rem] mx-auto" src="./assets/flow-chart.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="text-[2.5rem] sm:text-[3rem] text-gray-800 font-semibold my-[.5rem]">Design Process</h1>
+                                <p class="text-[1.6rem] text-gray-700">
+                                    We create detailed plans and 3D renderings to help our clients visualize the space and make informed decisions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col items-start bg-emerald-300 px-[2rem] py-[1.5rem] rounded-[2rem] sm:w-[90%]">
+                            <div>
+                                <img class="w-[7rem] mx-auto" src="./assets/vision.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="text-[2.5rem] sm:text-[3rem] text-gray-800 font-semibold my-[.5rem]">Supervision</h1>
+                                <p class="text-[1.6rem] text-gray-700">
+                                    We oversee the construction process to ensure that the design is executed according to plan and meets our high standards of quality.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col items-start bg-blue-400 px-[2rem] py-[1.5rem] rounded-[2rem] sm:w-[90%]">
+                            <div>
+                                <img class="w-[7rem] mx-auto" src="./assets/budget-planning.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="text-[2.5rem] sm:text-[3rem] text-gray-800 font-semibold my-[.5rem]">Budget Planning</h1>
+                                <p class="text-[1.6rem] text-gray-700">
+                                    We work with our clients to develop a budget that aligns with their financial goals and ensures that the project stays on track.
+                                </p>
+                            </div>
+                        </div>
+                        
+                     </div>
+                </div>
+            </div>
+                
         </div>
     </div>
 </body>
