@@ -1,19 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-
-.manrope-font {
-  font-family: "Manrope";
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
 html {
   font-size: 62.5%;
 }
 
 body {
   font-size: 1.6rem;
-  font-family: ".manrope-font";
   font-weight: 400;
   font-style: normal;
   margin: 0;
